@@ -26,3 +26,21 @@ lenguajes.map((lenguaje) => {
 
 //finalmente retorne el ul
 document.body.appendChild(ul);
+
+
+
+//debo añadir a cada elemento la clase activo
+
+lenguajes.forEach((lenguaje) => {
+    const li = document.createElement("li");
+
+    li.textContent = lenguaje,
+
+    //añado la clase activo a cada li
+    li.classList.add("activo");
+
+
+    return ul.appendChild(li);
+})
+
+document.body.appendChild(ul);
