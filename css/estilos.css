@@ -1,0 +1,11 @@
+body{
+    position:absolute;
+    top:0;
+}
+.activo{
+    position:relative;
+    border:2px solid black;
+    display: inline;
+    top:50px;
+    margin-left: 5px;
+}
