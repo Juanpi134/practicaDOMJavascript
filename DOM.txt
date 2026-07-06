@@ -1,1 +1,51 @@
 es un objeto modelo para todos los elementos HTML
+
+Cuando un sitio web se carga, el navegador crea un arbol como una representación de los NODOS HTML
+
+
+NODO:           Descripción
+Document        El padre de todos los nodos en el documento
+<html>          Elemento nodo
+<a>             Elemento nodo
+href            Atributo nodo
+"My header"     es un nodo de texto
+
+
+existen formas de seleccionar y buscar una referencia de un nodo
+podemos acceder a estos elementos mediante métodos que ofrece la API
+id,etiqueta,clase,Colecciones de objetos HTML
+
+Ejemplo básico
+const element = document.getElementById("intro");
+
+se busca la referencia del elemento con id "intro"
+el nodo document me ofrece estos métodos 
+
+por nombre de etiqueta
+const parrafo = document.getElementsByTagName("p");
+
+este me devuelve el o la cantidad de elementos que contengan esa referencia parrafo
+
+obteniendo una colección de elementos a través del método querySelectorAll()
+const elementos = document.querySelectorAll(".demo");
+este me retorna "un array" con posiciones
+
+pondremos unos ejemplos básicos de algunos elementos que nos devuelve una colección de objetos de elementos HTML
+
+se crean dos imagenes y esta me devuelve una coleccion de imagenes
+<img src="pic_htmltree.gif" width="486" height="266">
+<img src="pic_navigate.gif" width="362" height="255">
+
+document.getElementById("demo").innerHTML =
+"Number of images: " + document.images.length;
+
+la colección posee dos elementos de imagenes
+
+
+y ahora colocaremos una coleccion de links
+<a href="/html/default.asp">HTML</a>
+<br>
+<a href="/css/default.asp">CSS</a>
+
+document.getElementById("demo").innerHTML =
+"Number of links: " + document.links.length;
