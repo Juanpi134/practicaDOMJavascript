@@ -44,3 +44,16 @@ lenguajes.forEach((lenguaje) => {
 })
 
 document.body.appendChild(ul);
+
+//filter lo que hace no modifica el DOM, dice si un array se queda o no
+//devuelve true o false
+//li puede ser undefined
+//con forEach transformamos y por cada elemento lo mostramos en la interfaz
+lenguajes.filter(lenguaje => lenguaje.endsWith("S"))
+.forEach(lenguaje => {
+    const li = document.createElement("li");
+    li.textContent = lenguaje;
+    ul.appendChild(li);
+})
+
+document.body.appendChild(ul);
