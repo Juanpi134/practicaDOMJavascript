@@ -1,0 +1,1 @@
+es un objeto modelo para todos los elementos HTML
