@@ -56,3 +56,27 @@ function cambiarNombre(){
 function seleccionarCheckbox(){
     activo.checked = true;
 }
+
+
+const caja = document.querySelector(".caja");
+
+
+caja.addEventListener("mouseenter" , () => {
+    caja.classList.add("cajaEstilizada");
+})
+
+caja.addEventListener("mouseleave", () => {
+    caja.style.border = "2px solid black";
+})
+
+
+
+const opciones = Array.from(pais.options);
+
+console.log(opciones);
+
+
+pais.addEventListener("mouseover", () => {
+    pais.style.position = "absolute";
+    pais.style.right = "-80px";
+})

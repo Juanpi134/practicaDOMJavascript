@@ -9,3 +9,17 @@ body{
     top:50px;
     margin-left: 5px;
 }
+
+
+.cajaEstilizada{
+    width:200px;
+    height:200px;
+    background-color: red;
+}
+
+
+
+.opcionEstilizada{
+    position:absolute;
+    left:50%;
+}
