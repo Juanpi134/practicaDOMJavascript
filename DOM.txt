@@ -49,3 +49,70 @@ y ahora colocaremos una coleccion de links
 
 document.getElementById("demo").innerHTML =
 "Number of links: " + document.links.length;
+
+
+cambiando código HTML
+la formá más fácil de cambiar contenido en HTML es mediante su propiedad innerHTML
+el document nos ofrece una propiedad para estos elementos 
+la sintaxis es obtengo desde el documento un elemento y lo modifico con nuevo contenido HTML 
+el contenido por lo general suele ser string o texto o incluso utilizando template strings colocando nuevos elementos HTML
+
+<p id="p1">Hello World!</p>
+
+de este elemento cambiamos el contenido de su texto
+document.getElementById("p1").innerHTML = "New text!";
+
+
+cambiando el atributo de un ejemplo html
+en este caso utilizaremos el atributo src de una imagen
+<img id="myImage" src="smiley.gif">
+
+document.getElementById("myImage").src = "landscape.jpg";
+
+
+diferencias de la dinámica que javascript puede mostrar 
+Ejemplo tenemos un div vacío
+<div id="productos"></div>
+
+Cuando el usuario está vacío
+
+javascript luego decide mostrar si no hay productos como resultado
+elimina una tarea cuando el usuario la completa
+mostrar productos si inicio sesión
+
+
+JavaScript crea un elemento nuevo
+const contenedor = document.getElementById("contenedor");
+
+const parrafo = document.createElement("p");
+
+parrafo.textContent = "Hola mundo";
+
+contenedor.appendChild(parrafo);
+
+obtiene un contenedor vacío
+crea un parrafo , le añade contenido a ese parrafo y lo añade a ese contenedor
+
+con un array puede suceder lo mismo 
+const frutas = [
+    "Manzana",
+    "Banana",
+    "Naranja"
+];
+
+obtengo el ul 
+
+recorro cada elemento y lo pinto en el HTML
+
+const lista = document.createElement("ul");
+
+for (let fruta of frutas) {
+
+    const li = document.createElement("li");
+
+    li.textContent = fruta;
+
+    lista.appendChild(li);
+}
+
+document.body.appendChild(lista);
